@@ -40,13 +40,24 @@ function Sidebar() {
           <HeartIcon  className="h-5 w-5"/>
           <p>Liked Songs</p>
         </button>
-        <hr className="border-t-[0.1px] border-gray-900" /> {/* see JusInTime*/}
       </div>
       <div>
         <button className="flex items-center space-x-2 hover:text-white">
           <RssIcon  className="h-5 w-5"/>
           <p>Your Playlists</p>
         </button>
+        <hr className="border-t-[0.1px] border-gray-900" /> {/* see JusInTime*/}
+
+        <p className="cursorpointer hover:text-white"> Playlist name...</p>
+        <p className="cursorpointer hover:text-white"> Playlist name...</p>
+        <p className="cursorpointer hover:text-white"> Playlist name...</p>
+        <p className="cursorpointer hover:text-white"> Playlist name...</p>
+        <p className="cursorpointer hover:text-white"> Playlist name...</p>
+        <p className="cursorpointer hover:text-white"> Playlist name...</p>
+        <p className="cursorpointer hover:text-white"> Playlist name...</p>
+        <p className="cursorpointer hover:text-white"> Playlist name...</p>
+        <p className="cursorpointer hover:text-white"> Playlist name...</p>
+        
       </div>
     </div>
   )

@@ -3,20 +3,14 @@ import Sidebar from '../components/Sidebar'
 
 export default function Home() {
   return (
-    <div >
-      <Head>
-        <title>Spotter2</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div className="bg-black h-screen overflow-hidden">
 
      <main>
       <Sidebar />
       {/* Center */}
      </main>
 
-     <div>
-       {/* Player */}
-     </div>
+     <div>{/* Player */}</div>
     </div>
   )
 }
