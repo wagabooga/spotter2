@@ -2,5 +2,6 @@
 built with NEXT.JS 12.0 : https://nextjs.org/blog/next-12
 and tailwindcss : https://tailwindcss.com/
 Just-in-Time Mode : https://v2.tailwindcss.com/docs/just-in-time-mode
+NextAuth 4.0 for spotify auth: https://next-auth.js.org/getting-started/example (npm install next-auth@beta)
 #project
 >> using heroicons : see https://heroicons.com/
