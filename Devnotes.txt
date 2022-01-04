@@ -1,4 +1,5 @@
 #conception
+Node v16.13.0
 built with NEXT.JS 12.0 : https://nextjs.org/blog/next-12
 and tailwindcss : https://tailwindcss.com/
 Just-in-Time Mode : https://v2.tailwindcss.com/docs/just-in-time-mode

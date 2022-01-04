@@ -6,14 +6,21 @@ import {
   HeartIcon,
   RssIcon
 } from "@heroicons/react/outline"
+import { signOut } from "next-auth/react"
 
 function Sidebar() {
   return (
     <div className="text-gray-500 p5 text-sm border-r border-gray-900">
       <div className="space-y-4">
-        <button className="flex items-center space-x-2 hover:text-white ">
+        <button className="flex items-center space-x-2 hover:text-white">
           <HomeIcon  className="h-5 w-5"/>
           <p>Home</p>
+        </button>
+      </div>
+      <div className="space-y-4">
+        <button className="flex items-center space-x-2 hover:text-white" onClick={() => signOut()}>
+          <HomeIcon  className="h-5 w-5"/>
+          <p>Log out</p>
         </button>
       </div>
       <div>
@@ -30,7 +37,7 @@ function Sidebar() {
         <hr className="border-t-[0.1px] border-gray-900" /> {/* see JusInTime*/}
       </div>
       <div>
-        <button className="flex items-center space-x-2 hover:text-white ">
+        <button className="flex items-center space-x-2 hover:text-white">
           <PlusCircleIcon  className="h-5 w-5"/>
           <p>Create Playlist</p>
         </button>
