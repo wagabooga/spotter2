@@ -20,7 +20,7 @@ async function refreshAccessToken(token) {
 
     return {
       ...token,
-      error: "refreshAccessToken",
+      error: "RefreshAccessToken",
     };
   }
 }
@@ -61,9 +61,13 @@ export default NextAuth({
       return await refreshAccessToken(token);
     },
     async session({ session, token }) {
+      console.log("ASYNC IN NEXTAUTH SETTING")
       session.user.accessToken = token.accessToken;
+      console.log('A- Your access token is ' + token.accessToken);
       session.user.refreshToken = token.refreshToken;
+      console.log('A- Your refresh token is ' + token.refreshToken);
       session.user.username = token.username;
+      console.log('A- Your username token is ' + token.username);
 
       return session;
     },
