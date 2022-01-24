@@ -16,8 +16,8 @@ function Sidebar() {
   const [playlists, setPlaylists] = useState([])
 
   useEffect(() => {
-    if (true) {
-      spotifyApi.getUserPlaylists(session.user.username)
+    if (spotifyApi.getAccessToken()) {
+      spotifyApi.getUserPlaylists()
       .then((data) => {
         console.log("GOTHERE", data)
         setPlaylists(data.body.items)
